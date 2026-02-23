@@ -1,0 +1,30 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.4; }
+body { margin: 0; background: #0b0d12; color: #e9eef8; }
+code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 0.95em; }
+.page { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.header { display: flex; gap: 16px; align-items: flex-end; justify-content: space-between; margin-bottom: 16px; }
+.header h1 { margin: 0; font-size: 22px; }
+.muted { color: #aab4c6; }
+.card { background: #121826; border: 1px solid #26324a; border-radius: 12px; padding: 16px; }
+.tabs { display: flex; gap: 8px; }
+button { border: 1px solid #2b3a57; background: #1a2336; color: #e9eef8; padding: 8px 10px; border-radius: 10px; cursor: pointer; }
+button:hover { background: #202b42; }
+button.secondary { background: transparent; }
+button.danger { border-color: #6a2b3a; background: #2a141a; }
+button.active { background: #2b3a57; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.panel { border: 1px solid #26324a; border-radius: 12px; padding: 12px; background: #0f1421; }
+.panel.full { grid-column: 1 / -1; }
+h2, h3 { margin-top: 0; }
+label { display: grid; gap: 6px; margin: 10px 0; font-size: 14px; }
+input { padding: 10px; border-radius: 10px; border: 1px solid #26324a; background: #0b0d12; color: #e9eef8; }
+.row { display: flex; gap: 8px; margin-top: 10px; }
+.table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.table th, .table td { border-top: 1px solid #26324a; padding: 10px 8px; font-size: 14px; vertical-align: top; }
+.table th { text-align: left; color: #aab4c6; font-weight: 600; }
+.right { text-align: right; }
+.pre { background: #0b0d12; border: 1px solid #26324a; padding: 10px; border-radius: 10px; overflow: auto; }
+.error { margin: 12px 0; padding: 10px; border: 1px solid #6a2b3a; background: #2a141a; border-radius: 12px; display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+.footer { margin-top: 14px; font-size: 13px; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .header { flex-direction: column; align-items: flex-start; } }
